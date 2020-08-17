@@ -25,6 +25,10 @@
     background-color: #a7a4a4;
 }
 
+.col-sm-3{
+    padding-right: 5px;
+}
+
 .left-main{
     padding: 3px;
 }
@@ -62,4 +66,21 @@
     background-color: #f664b7;
     /*text*/
     text-align: center;
+}
+
+.col-sm-9{
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+.right-main{
+    padding: 5px;
+    margin-top: 3px;
+     /*color*/
+     background-color: #ffffff;
+}
+
+#footer .container{
+    margin-top: 1px;
+    background-color: #4c4a4a;
 }

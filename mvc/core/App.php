@@ -1,10 +1,11 @@
 <?php
 class App{
-    
+
     protected $controller = "Home";
     protected $action = "SayHi";
     protected $params = [];
-    
+
+
     function __construct(){
         $arr = $this->UrlProcess();
 
@@ -15,7 +16,8 @@ class App{
         }
         require_once "./mvc/controller/".$this->controller.".php";
         $this->controller = new $this->controller;
-        //xu ly action
+
+        //Xu ly action
         if(isset($arr[1])){
             if(method_exists($this->controller, $arr[1])){
                 $this->action = $arr[1];
@@ -23,24 +25,30 @@ class App{
             unset($arr[1]);
         }
 
-        //Xu ly params
+
+        //xu ly params
         if(isset($arr)){
             $this->params = array_values($arr);
         }
+        else{
+            $this->params = [];
+        }
+
         
         call_user_func_array([$this->controller, $this->action], $this->params);
-        
+
     }
 
+    
+
+    //Xu ly URL
     function UrlProcess(){
         if(isset($_GET["url"])){
             return explode("/", trim($_GET["url"]));
         }
     }
-
-    
-
 }
-
-
 ?>
+
+
+

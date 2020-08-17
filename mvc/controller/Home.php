@@ -1,21 +1,34 @@
 <?php
 class Home extends Controller{
-    function SayHi(){
-        $teo = $this->model("SinhVienModel");
-        echo $teo->GetSV();
+
+    public $CategoryModel;
+    public $AdsModel;
+
+    public function __construct(){
+        //$this->$CategoryModel = $this->model("CategoryModel");
+        //$this->AdsModel = $this->model("AdsModel");
     }
 
-    function Show($a, $b){
+    function SayHi(){
         $teo = $this->model("SinhVienModel");
-        $tong = $teo->tong($a, $b);
-        $this->view("SinhVienView", [
-            "page"=>"news",
-            "Number"=>$tong,
-            "Mau"=>"red",
-            "SV"=>$teo->SinhVien()
-            ]);
+        $this->view("master1",[
+            "page"=>"home"
+        ]);
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
