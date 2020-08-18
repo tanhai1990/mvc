@@ -1,0 +1,87 @@
+.top-nav .container{
+    background-color: #4c4a4a;
+    padding: 20px;;
+}
+
+.top-nav .top-nav_menu{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.top-nav .top-nav_menu a:link{
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.top-nav .top-nav_menu a:hover{
+    color: yellow;
+}
+
+#main{
+    margin-top: 1px;
+}
+
+#main .container{
+    background-color: #a7a4a4;
+}
+
+.col-sm-3{
+    padding-right: 5px;
+}
+
+.left-main{
+    padding: 3px;
+}
+
+.left-main_login{
+    /*color*/
+    background-color: #ffffff;
+    /*text*/
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.left-main_login h3{
+    /*color*/
+    margin-top: 0px;
+    background-color: #f664b7;
+    /*text*/
+    text-align: center;
+}
+
+.left-main_list{
+    margin-top: 5px;
+    /*color*/
+    background-color: #ffffff;
+    /*text*/
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.left-main_list h3{
+    /*color*/
+    margin-top: 0px;
+    background-color: #f664b7;
+    /*text*/
+    text-align: center;
+}
+
+.col-sm-9{
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+.right-main{
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+     /*color*/
+     background-color: #ffffff;
+}
+
+#footer .container{
+    margin-top: 1px;
+    background-color: #4c4a4a;
+}
