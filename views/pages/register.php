@@ -1,5 +1,5 @@
 <h2>Đăng kí</h2>
-<form action="" method="post">
+<form action="./KhachHangDangKi" method="post">
     <div class="form-group">
         <label for="UserName">Username:</label>
         <input type="text" class="form-control" id="username" name="UserName" placeholder="Enter username">
